@@ -1,0 +1,63 @@
+
+be	was/were		ser/start
+begin 	began		empezar	
+bring	brought		traer
+build 	built		construir		
+buy 	bought		comprar
+
+can 	could		puede	
+catch 	caught		capturar
+come 	came		ven
+cost 	cost		costo
+do 	did		hacer
+
+draw 	drew		dibujar
+drink 	drank		beber
+drive	drove		conducir
+eat	ate		comer
+feel	felt		sentir
+
+find	found		encontrar
+fly 	flew		volar
+forget	forgot		olvidar
+get	got		obtener
+give	gave		dar
+	
+go	went		ir
+have 	had		tener
+hear	heard		oir/escuchando
+know	knew		saber
+learn	learnt/learned		aprender/aprendido
+
+leave	left		salir/
+lose	lost		perder/perdido
+make	made		hacer/hecho
+mean	meant		
+meet	met		reunirse/reunio
+
+pay 	paid		pagar/pagado
+put	put		poner/
+read	read		leer
+ride	rode		pasear
+run	ran		correr/corrio
+
+say	said		decir/dijo
+see	saw		ver
+sell	sold		vender/vedido
+send	sent		enviar/enviado
+sit 	sat		sentar
+
+sleep	slept		dormir
+speak	spoke		hablar/hablo
+spell	spelt		deletrear
+spend	spent		gastar/gasto
+stand	stood		estar
+
+swim	swam		nadar/nado
+take	took		tomar
+teach	taught		enseñar
+think	thought		pensar
+
+understand	understood		entender
+wear	wore		vestir
+win	win		ganar
