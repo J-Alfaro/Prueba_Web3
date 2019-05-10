@@ -23,6 +23,7 @@ namespace Prueba3.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+            int a = 2;
 
             return View();
         }
