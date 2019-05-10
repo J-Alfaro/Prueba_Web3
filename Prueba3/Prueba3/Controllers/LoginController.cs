@@ -11,7 +11,11 @@ namespace Prueba3.Controllers
         // GET: Login
         public ActionResult Index()
         {
+            int a;
+
             return View();
+
+
         }
     }
 }
