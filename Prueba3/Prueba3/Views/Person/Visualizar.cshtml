@@ -1,0 +1,41 @@
+﻿@model Prueba3.Models.Person
+@{
+    ViewBag.Title = "Visualizar";
+}
+
+<h2 class="">Visualizar</h2>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="~/Person/Index">Semestre</a>
+        </li>
+        <li class="breadcrumb-item active">
+            @Model.FirstName
+
+    </li>
+</ol>
+
+</nav>
+<div class="card">
+    <div class="card-header">
+        Informacion detallada del semestre
+    </div>
+
+    <div class="card-body">
+        <dl class="dl-horizontal">
+            <dt>Id</dt>
+            <dd>@Model.PersonId</dd>
+            <dt>Semestre</dt>
+            <dd>@Model.FirstName</dd>
+            <dt>Año</dt>
+            <dd>@Model.MiddelInitial</dd>
+            <dt>Año</dt>
+            <dd>@Model.LastName</dd>
+            <dt>Estado</dt>
+            <dd>@(Model.DateOfBirth)</dd>
+        </dl>
+
+    </div>
+</div>
+
+

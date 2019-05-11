@@ -16,5 +16,42 @@ namespace Prueba3.Controllers
         {
             return View(objSemestre.Listar());
         }
+
+        public ActionResult Visualizar(int id)
+        {
+            return View(objSemestre.Obtener(id));
+        }
+
+        public ActionResult AgregarEditar(int id = 0)
+        {
+            return View(
+                id == 0 ? new Person()//Agregar un nuevo objeto
+                : objSemestre.Obtener(id)//Devuelve un objeto
+                );
+
+        }
+
+        public ActionResult Guardar(Person objSemestre)
+        {
+            if (ModelState.IsValid)
+            {
+                objSemestre.Guardar();
+                return Redirect("~/Person");
+            }
+            else
+            {
+                return View("~/Views/Person/AgregarEditar.cshtml");
+            }
+        }
+
+
+        //Action Eliminar
+        public ActionResult Eliminar(int id)
+        {
+            objSemestre.PersonId = id;
+            objSemestre.Eliminar();
+            return Redirect("~/Person");
+
+        }
     }
 }

@@ -4,6 +4,13 @@
 }
 
 <h2>Index</h2>
+<br />
+<div class="text-right">
+    <a href="~/Person/AgregarEditar/" class="btn btn-secondary text-right">
+        Nuevo Registro
+    </a>
+</div>
+<br />
 
 <table class="table">
     <thead>
@@ -25,9 +32,9 @@
             <th>@(s.LastName)</th>
             <th>@(s.DateOfBirth)</th>
             <th style="text-align:center;">
-                <a href="#" class="btn btn-xs btn-warning">Visualizar</a>
-                <a href="#" class="btn btn-xs btn-primary">Modificar</a>
-                <a href="#" class="btn btn-xs btn-danger" onclick="return confirm('Estas seguro de eliminar...?');">Eliminar</a>
+                <a href="~/Person/Visualizar/@s.PersonId" class="btn btn-xs btn-warning">Visualizar</a>
+                <a href="~/Person/AgregarEditar/@s.PersonId" class="btn btn-xs btn-primary">Modificar</a>
+                <a href="~/Person/Eliminar/@s.PersonId" class="btn btn-xs btn-danger" onclick="return confirm('Estas seguro de eliminar...?');">Eliminar</a>
             </th>
         </tr>
         }

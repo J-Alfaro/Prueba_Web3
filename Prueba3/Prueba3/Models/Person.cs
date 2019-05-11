@@ -53,5 +53,71 @@ namespace Prueba3.Models
             }
             return objsemestre;
         }
+
+
+
+        public Person Obtener(int id) //retorna solo un objeto
+        {
+            var objSemestre = new Person();
+            try
+            {
+                using (var db = new Model1())
+                {
+                    objSemestre = db.Person.
+                        Where(x => x.PersonId== id).
+                        SingleOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return objSemestre;
+        }
+
+        public void Guardar()
+        {
+            try
+            {
+                using (var db = new Model1())
+                {
+                    if (this.PersonId > 0)
+                    {
+                        //si existe un valor mayor que cero es por que existe el registro
+                        db.Entry(this).State = EntityState.Modified;
+                    }
+                    else
+                    {
+                        ///no existe el registro lo graba (Nuevo)
+                        db.Entry(this).State = EntityState.Added;
+
+                    }
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public void Eliminar()
+        {
+            try
+            {
+                using (var db = new Model1())
+                {
+                    db.Entry(this).State = EntityState.Deleted;
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
+
     }
 }
