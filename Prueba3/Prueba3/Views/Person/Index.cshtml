@@ -1,0 +1,36 @@
+﻿@model List<Prueba3.Models.Person>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:50px">ID</th>
+            <th style="width:100px">Nombre</th>
+            <th style="width:70px">Segundo  nombre</th>
+            <th style="width:80px">Apelllidos</th>
+            <th style="width:200px">Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+        {
+        <tr>
+            <th>@(s.PersonId)</th>
+            <th>@(s.FirstName)</th>
+            <th>@(s.MiddelInitial)</th>
+            <th>@(s.LastName)</th>
+            <th>@(s.DateOfBirth)</th>
+            <th style="text-align:center;">
+                <a href="#" class="btn btn-xs btn-warning">Visualizar</a>
+                <a href="#" class="btn btn-xs btn-primary">Modificar</a>
+                <a href="#" class="btn btn-xs btn-danger" onclick="return confirm('Estas seguro de eliminar...?');">Eliminar</a>
+            </th>
+        </tr>
+        }
+    </tbody>
+</table>
+
